@@ -1,0 +1,15 @@
+#table th:last-child,
+#table td:last-child {
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.sticky {
+	background-color: var(--pico-background-color);
+	position: sticky;
+	top: 0;
+	padding-block: var(--pico-spacing);
+}

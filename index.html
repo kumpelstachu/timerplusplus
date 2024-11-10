@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏱️</text></svg>"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timer++</title>
+		<script defer data-domain="timer.kums.app" src="https://a.kums.app/js/script.js"></script>
+	</head>
+	<body>
+		<header class="container">
+			<nav>
+				<ul>
+					<li>
+						<h1>Timer++</h1>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://github.com/kumpelstachu/timerplusplus">source</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<div class="sticky">
+				<div class="grid">
+					<div role="group">
+						<button id="start">Start</button>
+						<button id="pause" disabled>Pause</button>
+						<button id="stop" disabled>Stop</button>
+					</div>
+					<div role="group">
+						<button id="reset" disabled>Reset</button>
+						<button id="export" disabled>Export</button>
+					</div>
+				</div>
+
+				<strong id="timer" class="hidden">Timer: 00:00:00</strong>
+			</div>
+
+			<div class="overflow-auto">
+				<table id="table" class="hidden">
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>Time</th>
+							<th>Timestamp</th>
+							<th>Data</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</main>
+
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
